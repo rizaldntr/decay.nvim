@@ -5,7 +5,7 @@ local highlights = require('decay.highlights')
 function M.setup (opts)
   if opts == nil then
     opts = {
-      style = 'normal',
+      style = vim.g.decay_style or 'normal',
       cmp = {
         block_kind = false,
       },
